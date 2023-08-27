@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>demo</title>
+    <meta name="title" content="Kitter - Hight Quality Pet Food" />
+    <meta
+      name="description"
+      content="This is an eCommerce html template made by codewithsadee"
+    />
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+   
+  </head>
+
+  <body id="top">
+    <header class="header" data-header>
+      <div class="container">
+        <button
+          class="nav-toggle-btn"
+          aria-label="toggle manu"
+          data-nav-toggler
+        >
+          <ion-icon
+            name="menu-outline"
+            aria-hidden="true"
+            class="menu-icon"
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            aria-label="true"
+            class="close-icon"
+          ></ion-icon>
+        </button>
+
+        <a href="#" class="logo">Demo</a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>Collections</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>Blogs</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="action-btn" aria-label="Search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="action-btn user" aria-label="User">
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="action-btn" aria-label="cart">
+            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section
+        class="section hero has-bg-image"
+        id="home"
+        aria-label="home"
+        style="background-image: url('./assets/images/backbanner2.jpg')"
+      >
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <img
+              src="./assets/images/frbanner1.jpg"
+              alt="Slide 1"
+              style="width:100%; height: auto;"
+            />
+          </div>
+      
+          <div class="slide fade">
+            <img
+              src="./assets/images/frbanner2.jpg"
+              alt="Slide 2"
+              style="width:100%; height: auto;"
+            />
+          </div>
+      
+          <div class="slide fade">
+            <img
+              src="./assets/images/frbanner3.jpg"
+              alt="Slide 3"
+              style="width:100%; height: auto;"
+            />
+          </div>
+        
+        </div>
+      </section>
+
+
+        <section class="section category" aria-label="category">
+          <div class="container">
+            <h2 class="h2 section-title">
+              <span class="span">There Are Only</span> Two Gender
+            </h2>
+
+            <ul class="has-scrollbar">
+              <li class="scrollbar-item">
+                <div class="category-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 330; --height: 300"
+                  >
+                    <img
+                      src="./assets/images/mensection.jpg"
+                      width="330"
+                      height="300"
+                      loading="lazy"
+                      alt="Cat Food"
+                      class="img-cover"
+                    />
+                  </figure>
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="category-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 330; --height: 300"
+                  >
+                    <img
+                      src="./assets/images/womensection.jpg"
+                      width="330"
+                      height="300"
+                      loading="lazy"
+                      alt="Cat Toys"
+                      class="img-cover"
+                    />
+                  </figure>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section product" id="shop" aria-label="product">
+          <div class="container">
+            <h2 class="h2 section-title">
+              <span class="span">Our</span> products
+            </h2>
+
+            <ul class="grid-list" id="productGrid">
+              
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+    <script src="./assets/js/product.js" defer></script>
+
+    <script src="./assets/js/script.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
