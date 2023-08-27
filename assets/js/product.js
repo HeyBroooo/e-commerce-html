@@ -79,4 +79,32 @@ const products = [
   
   // Call the function to generate product cards
   generateProductCards();
+
+
+  
+// Function to handle the "Add to Cart" button click
+function handleAddToCartClick(event) {
+    const productCard = event.target.closest('.product-card');
+    if (productCard) {
+      const productName = productCard.querySelector('.card-title').textContent;
+      const productPrice = parseFloat(productCard.querySelector('.card-price').getAttribute('value'));
+  
+      // You can customize this part to add the product to the cart
+      // For now, let's log the product details to the console
+      console.log(`Added to cart: ${productName} - $${productPrice.toFixed(2)}`);
+    }
+  }
+  
+  // Add event listener to "Add to Cart" buttons
+  document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('card-action-btn')) {
+      handleAddToCartClick(event);
+    }
+  });
+  
+  
+  
+  
+  
+  
   

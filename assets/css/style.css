@@ -41,7 +41,7 @@
    */
 
   --ff-bangers: 'Bangers', cursive;
-  --ff-carter_one: 'Carter One', cursive;
+  /* --ff-carter_one: 'Carter One', cursive; */
   --ff-nunito_sans: 'Nunito Sans', sans-serif;
 
   --fs-1: 6.5rem;
@@ -377,89 +377,11 @@ body {
 
 
 /*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
-.hero {
-  margin-block-start: 85px;
-  min-height: 360px;
-  background-position: left;
-  text-align: center;
-}
-
-.hero-title .span { font-size: 0.5em; }
-
-.hero-text {
-  color: var(--white);
-  margin-block: 15px 25px;
-}
-
-.hero .btn { margin-inline: auto; }
-
-.hero .btn:is(:hover, :focus) { background-color: var(--portland-orange); }
-
-
-
-
-
-/*-----------------------------------*\
-  #CATEGORY
-\*-----------------------------------*/
-
-.category-card .card-banner { border-radius: var(--radius-10); }
-
-.category-card .img-cover { transition: var(--transition-2); }
-
-.category-card:is(:hover, :focus-within) .img-cover { transform: scale(1.08); }
-
-.category-card .card-title {
-  margin-block-start: 15px;
-  text-align: center;
-  transition: var(--transition-1);
-}
-
-.category-card .card-title:is(:hover, :focus) { color: var(--portland-orange); }
-
-
-
-
-
-/*-----------------------------------*\
-  #OFFERS
-\*-----------------------------------*/
-
-.offer-card {
-  border-radius: var(--radius-10);
-  padding: 20px;
-  display: grid;
-  align-content: center;
-}
-
-.offer-card .card-subtitle {
-  font-size: var(--fs-7);
-  text-transform: uppercase;
-  font-weight: var(--fw-700);
-}
-
-.offer-card .card-title {
-  color: var(--black);
-  margin-block: 5px 24px;
-}
-
-.offer-card .btn { background-color: var(--portland-orange); }
-
-.offer-card .btn:is(:hover, :focus) { background-color: var(--black); }
-
-
-
-
-
-/*-----------------------------------*\
   #PRODUCT
 \*-----------------------------------*/
 
 .product .img-cover.hover,
-.product-card .card-action-btn { display: none; }
+/* .product-card .card-action-btn { display: none; } */
 
 .product-card { text-align: center; }
 
@@ -557,31 +479,32 @@ body {
   .product-card .card-action-btn,
   .product-card .card-banner .hover {
     display: block;
-    position: absolute;
+ 
   }
 
-  .product-card .card-banner .hover {
+  /* .product-card .card-banner .hover {
     top: 0;
     left: 0;
-  }
+  } */
 
-  .product-card:is(:hover, :focus-within) .default,
+  /* .product-card:is(:hover, :focus-within) .default,
   .product-card .hover { opacity: 0; }
 
   .product-card .default,
-  .product-card:is(:hover, :focus-within) .hover { opacity: 1; }
+  .product-card:is(:hover, :focus-within) .hover { opacity: 1; } */
 
   .product-card .card-action-btn {
     top: 15px;
     right: 15px;
     color: var(--eerie-black);
-    font-size: 20px;
+    font-size: 12px;
     background-color: var(--white);
     border: 1px solid var(--platinum);
-    padding: 12px;
-    border-radius: 50%;
+    padding: 10px;
+    border-radius: 10%;
     transition: var(--transition-1);
-    opacity: 0;
+    opacity: 2;
+   
   }
 
   .product-card .card-action-btn:is(:hover, :focus) {
