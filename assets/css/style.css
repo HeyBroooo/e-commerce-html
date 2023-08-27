@@ -1,18 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -381,7 +367,6 @@ body {
 \*-----------------------------------*/
 
 .product .img-cover.hover,
-/* .product-card .card-action-btn { display: none; } */
 
 .product-card { text-align: center; }
 
@@ -482,16 +467,6 @@ body {
  
   }
 
-  /* .product-card .card-banner .hover {
-    top: 0;
-    left: 0;
-  } */
-
-  /* .product-card:is(:hover, :focus-within) .default,
-  .product-card .hover { opacity: 0; }
-
-  .product-card .default,
-  .product-card:is(:hover, :focus-within) .hover { opacity: 1; } */
 
   .product-card .card-action-btn {
     top: 15px;
@@ -691,5 +666,4 @@ body {
 
   }
   .grid-list { grid-template-columns: repeat(4, 1fr); }
-
 
